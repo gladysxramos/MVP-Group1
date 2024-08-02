@@ -34,7 +34,20 @@ struct profileView: View {
                             .frame(width: 200.0, height: 200.0)
                             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                         .padding(.leading)}
-                    Menu ("Edit Profile Picture"){
+                    // Menu ("Edit Profile Picture"){
+                    //     Button("Open Camera Roll"){
+                    //         self.sourceType = .photoLibrary
+                    //         isImagePickerShowing = true
+                    //         imageDisabled = false
+                    //     }
+                    //     Button("Take a Photo"){
+                    //         self.sourceType = .camera
+                    //         isImagePickerShowing = true
+                    //         imageDisabled = true
+                            
+                    //     }
+                    // }
+                    Menu {
                         Button("Open Camera Roll"){
                             self.sourceType = .photoLibrary
                             isImagePickerShowing = true
@@ -46,7 +59,16 @@ struct profileView: View {
                             imageDisabled = true
                             
                         }
+                    } label {
+                        Text("Edit Profile Picture")
                     }
+                    .font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))  // Customize the font of the label
+                    .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))  // Change the color of the label
+                    .padding()  // Add padding around the label
+                    .background(Color.(.lightgray))  // Add background color to the label
+                    .clipShape(Rectangle())
+                    .cornerRadius(15)
+                    
                     .sheet(isPresented: $isImagePickerShowing) {
                         ImagePicker(selectedImage: $selectedImage, isImagePickerShowing: $isImagePickerShowing, sourceType: self.sourceType)
                     }
