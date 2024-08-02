@@ -8,38 +8,74 @@
 import SwiftUI
 import MapKit
 
-
 extension CLLocationCoordinate2D {
-    static let newYork: Self = .init(
-        latitude: 40.730610,
-        longitude: -73.935242
+    static let salvationArmy: Self = .init(
+        latitude: 33.893925415875415,
+        longitude: -118.36263805553173
     )
     
-    static let seattle: Self = .init(
-        latitude: 47.608013,
-        longitude: -122.335167
+    static let KWK: Self = .init(
+        latitude: 33.90884605611724,
+        longitude: -118.3801753604404
     )
     
-    static let sanFrancisco: Self = .init(
-        latitude: 37.733795,
-        longitude: -122.446747
+    static let goodWillSC: Self = .init(
+        latitude: 33.92453793916915,
+        longitude: -118.3954038238913
     )
     
-    static let losAngeles: Self = .init(
-        latitude: 34.0549,
-        longitude: -118.2426
+    static let UCT: Self = .init(
+        latitude: 33.841556282008824,
+        longitude: -118.35418663529141
     )
     
-
+    static let scholarShop: Self = .init(
+        latitude: 33.9252077033355,
+        longitude: -118.38253629124135
+    )
+    
+    static let Street2nd: Self = .init(
+        latitude: 33.845359615555594,
+        longitude: -118.35328816642334
+    )
+    
+    static let goodWill2: Self = .init(
+        latitude: 33.91233422388942,
+        longitude: -118.36778715308256
+    )
+    static let salvationArmy2: Self = .init(
+        latitude: 33.87258614325455,
+        longitude: -118.36778715308256
+    )
+    static let goodWill3: Self = .init(
+        latitude: 33.87325006412574,
+        longitude: -118.39419575921696
+    )
+    static let goodWill4: Self = .init(
+        latitude: 33.971387470921435,
+        longitude: -118.3945863181008
+    )
+    static let CrossTrading: Self = .init(
+        latitude: 33.8726816256823,
+        longitude: -118.368988024247
+    )
+    static let goodWill5: Self = .init(
+        latitude: 33.99820209523836,
+        longitude: -118.42222071933709
+    )
+    static let goodWill6: Self = .init(
+        latitude: 33.975669558165336,
+        longitude: -118.37423979663603
+    )
     
 }
-
 struct mapView: View {
     @State private var position: MapCameraPosition = .userLocation(
                fallback: .camera(
-                   MapCamera(centerCoordinate: .losAngeles, distance: 1000000)
+                   MapCamera(centerCoordinate: .KWK, distance: 20000)
                )
            )
+    @State private var showmapPopUp = false
     var body: some View {
         NavigationStack {
             ZStack (alignment: .bottom){
@@ -52,17 +88,48 @@ struct mapView: View {
                             .padding(.leading)
                     ScrollView{
                         Map(position: $position) {
-                            Annotation("Seattle", coordinate: .seattle){
+                            Annotation("Kode With Klossy", coordinate: .KWK){
                                 Image(systemName: "mappin").foregroundStyle(.black)
                                     .padding()
                                     .background(.red)
                                     .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                         }
-                            Marker(coordinate: .newYork) {
-                                            Label("New York", systemImage: "mappin")
+                            Marker(coordinate: .salvationArmy) {
+                                Label("The Salvation Army Thrift Store & Donation Center", systemImage: "mappin")
                             }
-                            Marker("San Francisco", monogram: Text("SF"), coordinate: .sanFrancisco)
-                            Marker("Los Angeles", monogram: Text("LA"), coordinate: .losAngeles)
+                            Marker(coordinate: .goodWillSC) {
+                                    Label("Goodwill Southern California Boutique & Donation Center", systemImage: "mappin")
+                            }
+                            Marker(coordinate: .UCT) {
+                                    Label("Uptown Cheapskate Torrance", systemImage: "mappin")
+                            }
+                            Marker(coordinate: .scholarShop) {
+                                    Label("LA Scholarship Thrift Shop (Bldg 285)", systemImage: "mappin")
+                            }
+                            Marker(coordinate: .Street2nd) {
+                                    Label("2nd STREET Torrance", systemImage: "mappin")
+                            }
+                            Marker(coordinate: .goodWill2) {
+                                    Label("Goodwill Southern California Boutique & Donation Center", systemImage: "mappin")
+                            }
+                            Marker(coordinate: .salvationArmy2) {
+                                    Label("The Salvation Army Thrift Store & Donation Center", systemImage: "mappin")
+                            }
+                            Marker(coordinate: .goodWill3) {
+                                    Label("Goodwill Store & Donation Center", systemImage: "mappin")
+                            }
+                            Marker(coordinate: .goodWill4) {
+                                    Label("Goodwill Store & Donation Center", systemImage: "mappin")
+                            }
+                            Marker(coordinate: .CrossTrading) {
+                                    Label("Crossroads Trading", systemImage: "mappin")
+                            }
+                            Marker(coordinate: .goodWill4) {
+                                    Label("Goodwill California Store & Donation Center", systemImage: "mappin")
+                            }
+                            Marker(coordinate: .goodWill5) {
+                                    Label("Goodwill California Store & Donation Center", systemImage: "mappin")
+                            }
                         }
                         .mapControls {
                             MapUserLocationButton()
@@ -106,47 +173,50 @@ struct mapView: View {
                                 .font(Font.custom("AtkinsonHyperlegible-Regular", size: 16))
                                 .foregroundColor(Color(red: 40/255, green: 80/255, blue: 46/255))
                             Spacer()}.padding(.horizontal)}
-                HStack (alignment : .top){
-                    NavigationLink(destination: ContentView()) {
-                        Image("home icon")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                            .padding([.top, .leading, .bottom], 10.0)
-                        .frame(width: 70.0, height: 70.0)}
-                    NavigationLink(destination: infoView()) {
-                        Image("info icon")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                            .padding([.top, .leading, .bottom], 10.0)
-                        .frame(width: 70.0, height: 70.0)}
-                    Image("blank")
-                        .resizable(resizingMode: .stretch)
-                        .aspectRatio(contentMode: .fit)
-                        .padding([.top, .leading, .bottom], 10.0)
-                        .frame(width: 70.0, height: 70.0)
-                    Image("map icon")
-                        .resizable(resizingMode: .stretch)
-                        .aspectRatio(contentMode: .fit)
-                        .padding([.top, .leading, .bottom], 10.0)
-                        .frame(width: 70.0, height: 70.0)
-                    NavigationLink(destination: profileView()) {
-                        Image("profile icon")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                            .padding([.top, .bottom, .trailing], 10.0)
-                        .frame(width: 70.0, height: 70.0)}
-                }
-                .background(Rectangle())
-                .foregroundColor(Color(red: 57/255, green: 60/255, blue: 90/255))
-                .cornerRadius(45)
-            }
-                Button{
+               HStack (alignment : .top){
+                   NavigationLink(destination: ContentView()) {
+                       Image("home icon")
+                           .resizable(resizingMode: .stretch)
+                           .aspectRatio(contentMode: .fit)
+                           .padding([.top, .leading, .bottom], 10.0)
+                       .frame(width: 70.0, height: 70.0)}
+                   NavigationLink(destination: infoView()) {
+                       Image("info icon")
+                           .resizable(resizingMode: .stretch)
+                           .aspectRatio(contentMode: .fit)
+                           .padding([.top, .leading, .bottom], 10.0)
+                       .frame(width: 70.0, height: 70.0)}
+                   Image("blank")
+                       .resizable(resizingMode: .stretch)
+                       .aspectRatio(contentMode: .fit)
+                       .padding([.top, .leading, .bottom], 10.0)
+                       .frame(width: 70.0, height: 70.0)
+                   Image("map icon")
+                       .resizable(resizingMode: .stretch)
+                       .aspectRatio(contentMode: .fit)
+                       .padding([.top, .leading, .bottom], 10.0)
+                       .frame(width: 70.0, height: 70.0)
+                   NavigationLink(destination: profileView()) {
+                       Image("profile icon")
+                           .resizable(resizingMode: .stretch)
+                           .aspectRatio(contentMode: .fit)
+                           .padding([.top, .bottom, .trailing], 10.0)
+                       .frame(width: 70.0, height: 70.0)}
+               }
+               .background(Rectangle())
+               .foregroundColor(Color(red: 57/255, green: 60/255, blue: 90/255))
+               .cornerRadius(45)
+           }
+               Button{
 //                    var hi = 1
-                } label: {
-                    Image("plus icon")
-                        .resizable(resizingMode: .stretch)
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 100.0, height: 100.0)
+               } label: {
+                   Image("plus icon")
+                       .resizable(resizingMode: .stretch)
+                       .aspectRatio(contentMode: .fit)
+                       .frame(width: 100.0, height: 100.0)
+                }
+                if showmapPopUp {
+                    mapPopUp()
                 }
             }
         }

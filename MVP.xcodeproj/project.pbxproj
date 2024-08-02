@@ -36,6 +36,7 @@
 		829F3D092C5C8FB700109B1A /* BackgroundRemover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3D082C5C8FB700109B1A /* BackgroundRemover.swift */; };
 		829F3D0B2C5C94ED00109B1A /* Image PIcker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3D0A2C5C94ED00109B1A /* Image PIcker.swift */; };
 		829F3D0D2C5C954000109B1A /* addNewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3D0C2C5C954000109B1A /* addNewImage.swift */; };
+		829F3D0F2C5C9E6900109B1A /* mapPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3D0E2C5C9E6900109B1A /* mapPopUp.swift */; };
 		BD9ED9532C5BF581002CA601 /* SwiftUIImageViewer in Frameworks */ = {isa = PBXBuildFile; productRef = BD9ED9522C5BF581002CA601 /* SwiftUIImageViewer */; };
 		BDA9BEEF2C584A110055FF8E /* MVPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9BEEE2C584A110055FF8E /* MVPApp.swift */; };
 		BDA9BEF12C584A110055FF8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9BEF02C584A110055FF8E /* ContentView.swift */; };
@@ -97,6 +98,7 @@
 		829F3D082C5C8FB700109B1A /* BackgroundRemover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BackgroundRemover.swift; path = "../../ImageData-main/PracticeCamera/BackgroundRemover.swift"; sourceTree = "<group>"; };
 		829F3D0A2C5C94ED00109B1A /* Image PIcker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Image PIcker.swift"; path = "../../ImageData-main/PracticeCamera/Image PIcker.swift"; sourceTree = "<group>"; };
 		829F3D0C2C5C954000109B1A /* addNewImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = addNewImage.swift; path = "../../ImageData-main/PracticeCamera/addNewImage.swift"; sourceTree = "<group>"; };
+		829F3D0E2C5C9E6900109B1A /* mapPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = mapPopUp.swift; path = ../mapPopUp.swift; sourceTree = "<group>"; };
 		BD9864A72C5C2B6A0007C8FA /* fastFashionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fastFashionView.swift; sourceTree = "<group>"; };
 		BD9864A92C5C3A890007C8FA /* theFactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theFactsView.swift; sourceTree = "<group>"; };
 		BDA9BEEB2C584A110055FF8E /* MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,6 +209,7 @@
 		BDA9BEED2C584A110055FF8E /* MVP */ = {
 			isa = PBXGroup;
 			children = (
+				829F3D0E2C5C9E6900109B1A /* mapPopUp.swift */,
 				BDA9BF1D2C584DDF0055FF8E /* Info.plist */,
 				BDA9BEEE2C584A110055FF8E /* MVPApp.swift */,
 				829F3D062C5C8F9C00109B1A /* DeepLabV3.mlmodel */,
@@ -408,6 +411,7 @@
 				BDA9BEF12C584A110055FF8E /* ContentView.swift in Sources */,
 				829F3CD92C5C727D00109B1A /* CreateCategoryView.swift in Sources */,
 				829F3CFA2C5C8F8000109B1A /* CVPixelBuffer+Create.swift in Sources */,
+				829F3D0F2C5C9E6900109B1A /* mapPopUp.swift in Sources */,
 				829F3D032C5C8F8000109B1A /* UIImage+CVPixelBuffer.swift in Sources */,
 				829F3D052C5C8F8000109B1A /* UIImage+RawBytes.swift in Sources */,
 				829F3D072C5C8F9C00109B1A /* DeepLabV3.mlmodel in Sources */,
@@ -598,7 +602,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MVP/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera and camera roll.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to access your location.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to access your photo library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -632,7 +636,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MVP/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera and camera roll.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to access your location.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to access your photo library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
