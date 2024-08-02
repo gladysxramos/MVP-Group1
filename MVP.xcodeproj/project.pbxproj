@@ -10,11 +10,11 @@
 		829F3CD42C5C727D00109B1A /* CategoriesJSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CCE2C5C727C00109B1A /* CategoriesJSONDecoder.swift */; };
 		829F3CD52C5C727D00109B1A /* UpdateToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CCF2C5C727C00109B1A /* UpdateToDoView.swift */; };
 		829F3CD62C5C727D00109B1A /* ItemsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CD02C5C727C00109B1A /* ItemsContainer.swift */; };
-		829F3CD72C5C727D00109B1A /* DefaultCategories.json in Resources */ = {isa = PBXBuildFile; fileRef = 829F3CD12C5C727C00109B1A /* DefaultCategories.json */; };
 		829F3CD82C5C727D00109B1A /* ModifyTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CD22C5C727C00109B1A /* ModifyTodoView.swift */; };
 		829F3CD92C5C727D00109B1A /* CreateCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CD32C5C727C00109B1A /* CreateCategoryView.swift */; };
 		829F3CDB2C5C72F500109B1A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CDA2C5C72F500109B1A /* Item.swift */; };
 		829F3CDD2C5C730500109B1A /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CDC2C5C730500109B1A /* TodoView.swift */; };
+		829F3CE22C5C772800109B1A /* DefaultCategories.json in Resources */ = {isa = PBXBuildFile; fileRef = 829F3CE12C5C772800109B1A /* DefaultCategories.json */; };
 		BD9ED9532C5BF581002CA601 /* SwiftUIImageViewer in Frameworks */ = {isa = PBXBuildFile; productRef = BD9ED9522C5BF581002CA601 /* SwiftUIImageViewer */; };
 		BDA9BEEF2C584A110055FF8E /* MVPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9BEEE2C584A110055FF8E /* MVPApp.swift */; };
 		BDA9BEF12C584A110055FF8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9BEF02C584A110055FF8E /* ContentView.swift */; };
@@ -50,11 +50,11 @@
 		829F3CCE2C5C727C00109B1A /* CategoriesJSONDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoriesJSONDecoder.swift; path = "../../youtube-content-2023-main/See How To Store An Image In SwiftData 📸 | SwiftData Tutorial/Source Code/Final/ToDos/ToDos/CategoriesJSONDecoder.swift"; sourceTree = "<group>"; };
 		829F3CCF2C5C727C00109B1A /* UpdateToDoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UpdateToDoView.swift; path = "../../youtube-content-2023-main/See How To Store An Image In SwiftData 📸 | SwiftData Tutorial/Source Code/Final/ToDos/ToDos/UpdateToDoView.swift"; sourceTree = "<group>"; };
 		829F3CD02C5C727C00109B1A /* ItemsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemsContainer.swift; path = "../../youtube-content-2023-main/See How To Store An Image In SwiftData 📸 | SwiftData Tutorial/Source Code/Final/ToDos/ToDos/ItemsContainer.swift"; sourceTree = "<group>"; };
-		829F3CD12C5C727C00109B1A /* DefaultCategories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = DefaultCategories.json; path = "../../youtube-content-2023-main/See How To Store An Image In SwiftData 📸 | SwiftData Tutorial/Source Code/Final/ToDos/ToDos/DefaultCategories.json"; sourceTree = "<group>"; };
 		829F3CD22C5C727C00109B1A /* ModifyTodoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModifyTodoView.swift; path = "../../youtube-content-2023-main/See How To Store An Image In SwiftData 📸 | SwiftData Tutorial/Source Code/Final/ToDos/ToDos/ModifyTodoView.swift"; sourceTree = "<group>"; };
 		829F3CD32C5C727C00109B1A /* CreateCategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateCategoryView.swift; path = "../../youtube-content-2023-main/See How To Store An Image In SwiftData 📸 | SwiftData Tutorial/Source Code/Final/ToDos/ToDos/CreateCategoryView.swift"; sourceTree = "<group>"; };
 		829F3CDA2C5C72F500109B1A /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = "../../youtube-content-2023-main/See How To Store An Image In SwiftData 📸 | SwiftData Tutorial/Source Code/Final/ToDos/ToDos/Item.swift"; sourceTree = "<group>"; };
 		829F3CDC2C5C730500109B1A /* TodoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodoView.swift; path = "../../youtube-content-2023-main/See How To Store An Image In SwiftData 📸 | SwiftData Tutorial/Source Code/Final/ToDos/ToDos/TodoView.swift"; sourceTree = "<group>"; };
+		829F3CE12C5C772800109B1A /* DefaultCategories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = DefaultCategories.json; path = ../../../.Trash/DefaultCategories.json; sourceTree = "<group>"; };
 		BD9864A72C5C2B6A0007C8FA /* fastFashionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fastFashionView.swift; sourceTree = "<group>"; };
 		BD9864A92C5C3A890007C8FA /* theFactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theFactsView.swift; sourceTree = "<group>"; };
 		BDA9BEEB2C584A110055FF8E /* MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,10 +151,10 @@
 				829F3CCE2C5C727C00109B1A /* CategoriesJSONDecoder.swift */,
 				829F3CDC2C5C730500109B1A /* TodoView.swift */,
 				829F3CD32C5C727C00109B1A /* CreateCategoryView.swift */,
-				829F3CD12C5C727C00109B1A /* DefaultCategories.json */,
 				829F3CD02C5C727C00109B1A /* ItemsContainer.swift */,
 				829F3CD22C5C727C00109B1A /* ModifyTodoView.swift */,
 				829F3CCF2C5C727C00109B1A /* UpdateToDoView.swift */,
+				829F3CE12C5C772800109B1A /* DefaultCategories.json */,
 				829F3CDA2C5C72F500109B1A /* Item.swift */,
 				BDA9BEF22C584A120055FF8E /* Assets.xcassets */,
 				BDA9BEF42C584A120055FF8E /* Preview Content */,
@@ -299,7 +299,7 @@
 			files = (
 				BDA9BEF62C584A120055FF8E /* Preview Assets.xcassets in Resources */,
 				BDA9BEF32C584A120055FF8E /* Assets.xcassets in Resources */,
-				829F3CD72C5C727D00109B1A /* DefaultCategories.json in Resources */,
+				829F3CE22C5C772800109B1A /* DefaultCategories.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

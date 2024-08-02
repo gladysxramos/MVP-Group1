@@ -74,6 +74,7 @@ struct ContentView: View {
                 Color(red: 247/255, green: 240/255, blue: 233/255)
                     .ignoresSafeArea()
                 VStack {
+                    
                     VStack (alignment: .leading){
                         //Header
                         HStack (alignment:.center) {
@@ -112,9 +113,7 @@ struct ContentView: View {
                                 ScrollView(.horizontal){
                                     HStack(spacing: 20){
                                         ForEach(filteredItems) { item in
-                                            //                                            if let category = item.category {
-                                            //
-                                            //                                            }
+                                                                      
                                             VStack{
                                                 Text(item.title)
                                                 
@@ -473,7 +472,43 @@ struct ContentView: View {
                 
                 
             }
-            
+            .sheet(isPresented: $showCreateCategory,
+                   content: {
+                NavigationStack {
+                    CreateCategoryView()
+                }
+            })
+            .toolbar {
+                
+                ToolbarItemGroup(placement: .primaryAction) {
+                    Button {
+                        showCreateCategory.toggle()
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                }
+                
+                ToolbarItemGroup(placement: .topBarTrailing) {
+                    
+                    Menu {
+                        Picker("", selection: $selectedSortOption) {
+                            ForEach(SortOption.allCases,
+                                    id: \.rawValue) { option in
+                                Label(option.rawValue.capitalized,
+                                      systemImage: option.systemImage)
+                                .tag(option)
+                            }
+                        }
+                        .labelsHidden()
+                        
+                    } label: {
+                        Image(systemName: "ellipsis")
+                            .symbolVariant(.circle)
+                    }
+                    
+                }
+                
+            }
             
         }
     }
