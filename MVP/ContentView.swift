@@ -113,46 +113,32 @@ struct ContentView: View {
                                 ScrollView(.horizontal){
                                     HStack(spacing: 20){
                                         ForEach(filteredItems) { item in
-                                                                      
-                                            VStack{
-                                                Text(item.title)
-                                                
-                                                
-                                                if let selectedPhotoData = item.image,
-                                                   let uiImage = UIImage(data: selectedPhotoData) {
-                                                    Image(uiImage: uiImage)
-                                                        .resizable()
-                                                        .scaledToFill()
-                                                        .frame(maxWidth: 150, maxHeight: 150)
-                                                        .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
-                                                        .onTapGesture {
-                                                            selectedImage = uiImage
-                                                            isImageViewerPresented = true
-                                                        }
+                                            let category = item.category
+                                            if category!.title == "Tops"{
+                                                VStack{
+                                                    Text(item.title)
+                                                    
+                                                    
+                                                    if let selectedPhotoData = item.image,
+                                                       let uiImage = UIImage(data: selectedPhotoData) {
+                                                        Image(uiImage: uiImage)
+                                                            .resizable()
+                                                            .scaledToFill()
+                                                            .frame(maxWidth: 150, maxHeight: 150)
+                                                            .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                                                            .onTapGesture {
+                                                                selectedImage = uiImage
+                                                                isImageViewerPresented = true
+                                                            }
+                                                    }
+                                                    
                                                 }
+                                               
                                                 
                                             }
-                                            //                                            .swipeActions {
-                                            //
-                                            //                                                Button(role: .destructive) {
-                                            //
-                                            //                                                    withAnimation {
-                                            //                                                        modelContext.delete(item)
-                                            //                                                    }
-                                            //
-                                            //                                                } label: {
-                                            //                                                    Label("Delete", systemImage: "trash.fill")
-                                            //                                                }
-                                            //
-                                            //                                                Button {
-                                            //                                                    toDoToEdit = item
-                                            //                                                } label: {
-                                            //                                                    Label("Edit", systemImage: "pencil")
-                                            //                                                }
-                                            //                                                .tint(.orange)
-                                            //
-                                            //                                            }
+                                                                    
                                         }
+                                        
                                         
                                     }
                                 }
@@ -163,45 +149,34 @@ struct ContentView: View {
                                     .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                 ScrollView(.horizontal){
                                     HStack(spacing: 20) {
-                                        VStack {
-                                            Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                            
-                                            Image("camera")
-                                                .resizable(resizingMode: .stretch)
-                                                .aspectRatio(contentMode: .fit)
-                                                .padding(.bottom, 10.0)
-                                                .frame(width: 150.0, height: 150.0)
+                                        ForEach(filteredItems) { item in
+                                            let category = item.category
+                                            if category!.title == "Bottoms"{
+                                                VStack{
+                                                    Text(item.title)
+                                                    
+                                                    
+                                                    if let selectedPhotoData = item.image,
+                                                       let uiImage = UIImage(data: selectedPhotoData) {
+                                                        Image(uiImage: uiImage)
+                                                            .resizable()
+                                                            .scaledToFill()
+                                                            .frame(maxWidth: 150, maxHeight: 150)
+                                                            .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                                                            .onTapGesture {
+                                                                selectedImage = uiImage
+                                                                isImageViewerPresented = true
+                                                            }
+                                                    }
+                                                    
+                                                }
+                                                
+                                            }
+                                                                      
+                                           
+                        
                                         }
-                                        .background(Rectangle()
-                                            .foregroundColor(Color.white))
-                                        .cornerRadius(15)
-                                        
-                                        VStack {
-                                            Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                            Image("camera")
-                                                .resizable(resizingMode: .stretch)
-                                                .aspectRatio(contentMode: .fit)
-                                                .padding(.bottom, 10.0)
-                                                .frame(width: 150.0, height: 150.0)
-                                        }
-                                        .background(Rectangle()
-                                            .foregroundColor(Color.white))
-                                        .cornerRadius(15)
-                                        
-                                        VStack {
-                                            Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                            Image("camera")
-                                                .resizable(resizingMode: .stretch)
-                                                .aspectRatio(contentMode: .fit)
-                                                .padding(.bottom, 10.0)
-                                                .frame(width: 150.0, height: 150.0)
-                                        }
+                                     
                                     }
                                 }
                                 
@@ -211,48 +186,34 @@ struct ContentView: View {
                                     .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                 ScrollView(.horizontal){
                                     HStack(spacing: 20) {
-                                        VStack {
-                                            Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                            
-                                            Image("camera")
-                                                .resizable(resizingMode: .stretch)
-                                                .aspectRatio(contentMode: .fit)
-                                                .padding(.bottom, 10.0)
-                                                .frame(width: 150.0, height: 150.0)
+                                        ForEach(filteredItems) { item in
+                                            let category = item.category
+                                            if category!.title == "Outerwear"{
+                                                VStack{
+                                                    Text(item.title)
+                                                    
+                                                    
+                                                    if let selectedPhotoData = item.image,
+                                                       let uiImage = UIImage(data: selectedPhotoData) {
+                                                        Image(uiImage: uiImage)
+                                                            .resizable()
+                                                            .scaledToFill()
+                                                            .frame(maxWidth: 150, maxHeight: 150)
+                                                            .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                                                            .onTapGesture {
+                                                                selectedImage = uiImage
+                                                                isImageViewerPresented = true
+                                                            }
+                                                    }
+                                                    
+                                                }
+                                                
+                                            }
+                                                                      
+                                           
+                        
                                         }
-                                        .background(Rectangle()
-                                            .foregroundColor(Color.white))
-                                        .cornerRadius(15)
-                                        
-                                        VStack {
-                                            Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                            Image("camera")
-                                                .resizable(resizingMode: .stretch)
-                                                .aspectRatio(contentMode: .fit)
-                                                .padding(.bottom, 10.0)
-                                                .frame(width: 150.0, height: 150.0)
-                                        }
-                                        .background(Rectangle()
-                                            .foregroundColor(Color.white))
-                                        .cornerRadius(15)
-                                        
-                                        VStack {
-                                            Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                            Image("camera")
-                                                .resizable(resizingMode: .stretch)
-                                                .aspectRatio(contentMode: .fit)
-                                                .padding(.bottom, 10.0)
-                                                .frame(width: 150.0, height: 150.0)
-                                        }
-                                        .background(Rectangle()
-                                            .foregroundColor(Color.white))
-                                        .cornerRadius(15)
+                                       
                                     }
                                 }
                                 
@@ -262,48 +223,34 @@ struct ContentView: View {
                                     .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                 ScrollView(.horizontal){
                                     HStack(spacing: 20) {
-                                        VStack {
-                                            Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                            
-                                            Image("camera")
-                                                .resizable(resizingMode: .stretch)
-                                                .aspectRatio(contentMode: .fit)
-                                                .padding(.bottom, 10.0)
-                                                .frame(width: 150.0, height: 150.0)
+                                        ForEach(filteredItems) { item in
+                                            let category = item.category
+                                            if category!.title == "Footwear"{
+                                                VStack{
+                                                    Text(item.title)
+                                                    
+                                                    
+                                                    if let selectedPhotoData = item.image,
+                                                       let uiImage = UIImage(data: selectedPhotoData) {
+                                                        Image(uiImage: uiImage)
+                                                            .resizable()
+                                                            .scaledToFill()
+                                                            .frame(maxWidth: 150, maxHeight: 150)
+                                                            .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                                                            .onTapGesture {
+                                                                selectedImage = uiImage
+                                                                isImageViewerPresented = true
+                                                            }
+                                                    }
+                                                    
+                                                }
+                                                
+                                            }
+                                                                      
+                                           
+                        
                                         }
-                                        .background(Rectangle()
-                                            .foregroundColor(Color.white))
-                                        .cornerRadius(15)
                                         
-                                        VStack {
-                                            Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                            Image("camera")
-                                                .resizable(resizingMode: .stretch)
-                                                .aspectRatio(contentMode: .fit)
-                                                .padding(.bottom, 10.0)
-                                                .frame(width: 150.0, height: 150.0)
-                                        }
-                                        .background(Rectangle()
-                                            .foregroundColor(Color.white))
-                                        .cornerRadius(15)
-                                        
-                                        VStack {
-                                            Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                            Image("camera")
-                                                .resizable(resizingMode: .stretch)
-                                                .aspectRatio(contentMode: .fit)
-                                                .padding(.bottom, 10.0)
-                                                .frame(width: 150.0, height: 150.0)
-                                        }
-                                        .background(Rectangle()
-                                            .foregroundColor(Color.white))
-                                        .cornerRadius(15)
                                     }
                                 }
                                 
@@ -313,99 +260,70 @@ struct ContentView: View {
                                     .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                 ScrollView(.horizontal){
                                     HStack(spacing: 20) {
-                                        VStack {
-                                            Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                            
-                                            Image("camera")
-                                                .resizable(resizingMode: .stretch)
-                                                .aspectRatio(contentMode: .fit)
-                                                .padding(.bottom, 10.0)
-                                                .frame(width: 150.0, height: 150.0)
+                                        ForEach(filteredItems) { item in
+                                            let category = item.category
+                                            if category!.title == "Bags"{
+                                                VStack{
+                                                    Text(item.title)
+                                                    
+                                                    
+                                                    if let selectedPhotoData = item.image,
+                                                       let uiImage = UIImage(data: selectedPhotoData) {
+                                                        Image(uiImage: uiImage)
+                                                            .resizable()
+                                                            .scaledToFill()
+                                                            .frame(maxWidth: 150, maxHeight: 150)
+                                                            .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                                                            .onTapGesture {
+                                                                selectedImage = uiImage
+                                                                isImageViewerPresented = true
+                                                            }
+                                                    }
+                                                    
+                                                }
+                                                
+                                            }
+                                                                      
+                                           
+                        
                                         }
-                                        .background(Rectangle()
-                                            .foregroundColor(Color.white))
-                                        .cornerRadius(15)
                                         
-                                        VStack {
-                                            Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                            Image("camera")
-                                                .resizable(resizingMode: .stretch)
-                                                .aspectRatio(contentMode: .fit)
-                                                .padding(.bottom, 10.0)
-                                                .frame(width: 150.0, height: 150.0)
-                                        }
-                                        .background(Rectangle()
-                                            .foregroundColor(Color.white))
-                                        .cornerRadius(15)
-                                        
-                                        VStack {
-                                            Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                            Image("camera")
-                                                .resizable(resizingMode: .stretch)
-                                                .aspectRatio(contentMode: .fit)
-                                                .padding(.bottom, 10.0)
-                                                .frame(width: 150.0, height: 150.0)
-                                        }
-                                        .background(Rectangle()
-                                            .foregroundColor(Color.white))
-                                        .cornerRadius(15)
                                     }
                                 }
-                                
                                 Text("Accessories")
                                     .font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
                                     .fontWeight(.bold)
                                     .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                 ScrollView(.horizontal){
                                     HStack(spacing: 20) {
-                                        VStack {
-                                            Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                            
-                                            Image("camera")
-                                                .resizable(resizingMode: .stretch)
-                                                .aspectRatio(contentMode: .fit)
-                                                .padding(.bottom, 10.0)
-                                                .frame(width: 150.0, height: 150.0)
+                                        ForEach(filteredItems) { item in
+                                            let category = item.category
+                                            if category!.title == "Accessories"{
+                                                VStack{
+                                                    Text(item.title)
+                                                    
+                                                    
+                                                    if let selectedPhotoData = item.image,
+                                                       let uiImage = UIImage(data: selectedPhotoData) {
+                                                        Image(uiImage: uiImage)
+                                                            .resizable()
+                                                            .scaledToFill()
+                                                            .frame(maxWidth: 150, maxHeight: 150)
+                                                            .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                                                            .onTapGesture {
+                                                                selectedImage = uiImage
+                                                                isImageViewerPresented = true
+                                                            }
+                                                    }
+                                                    
+                                                }
+                                                
+                                            }
+                                                                      
+                                           
+                        
                                         }
-                                        .background(Rectangle()
-                                            .foregroundColor(Color.white))
-                                        .cornerRadius(15)
                                         
-                                        VStack {
-                                            Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                            Image("camera")
-                                                .resizable(resizingMode: .stretch)
-                                                .aspectRatio(contentMode: .fit)
-                                                .padding(.bottom, 10.0)
-                                                .frame(width: 150.0, height: 150.0)
-                                        }
-                                        .background(Rectangle()
-                                            .foregroundColor(Color.white))
-                                        .cornerRadius(15)
-                                        
-                                        VStack {
-                                            Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                            Image("camera")
-                                                .resizable(resizingMode: .stretch)
-                                                .aspectRatio(contentMode: .fit)
-                                                .padding(.bottom, 10.0)
-                                                .frame(width: 150.0, height: 150.0)
-                                        }
-                                        .background(Rectangle()
-                                            .foregroundColor(Color.white))
-                                        .cornerRadius(15)
                                     }
                                 }
                             }
@@ -491,20 +409,18 @@ struct ContentView: View {
                 ToolbarItemGroup(placement: .topBarTrailing) {
                     
                     Menu {
-                        Picker("", selection: $selectedSortOption) {
-                            ForEach(SortOption.allCases,
-                                    id: \.rawValue) { option in
-                                Label(option.rawValue.capitalized,
-                                      systemImage: option.systemImage)
-                                .tag(option)
-                            }
+                        Button("Delete Clothing Items"){
+                            
                         }
-                        .labelsHidden()
+                       
+                        Button("Edit an Item"){
+                            
+                        }
+                       
                         
                     } label: {
-                        Image(systemName: "ellipsis")
-                            .symbolVariant(.circle)
-                    }
+                        Text("Edit")
+                }
                     
                 }
                 
