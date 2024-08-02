@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct profileView: View {
+    @State private var imageDisabled = true
+    @State var isImagePickerShowing = false
+    @State var selectedImage: UIImage?
+    @State private var sourceType: UIImagePickerController.SourceType = .photoLibrary
+    @State private var processedImage: UIImage?
     var body: some View {
         NavigationStack {
+           
             ZStack (alignment: .bottom){
                 Color(red: 247/255, green: 240/255, blue: 233/255)
                     .ignoresSafeArea()
@@ -22,12 +28,29 @@ struct profileView: View {
                             .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                             .lineLimit(/*@START_MENU_TOKEN@*/7/*@END_MENU_TOKEN@*/)
                             
-                        Image("camera")
+                        Image(uiImage: selectedImage ?? UIImage(named: "camera")!)
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 180.0, height: 180.0)
+                            .frame(width: 200.0, height: 200.0)
                             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                         .padding(.leading)}
+                    Menu ("Edit Profile Picture"){
+                        Button("Open Camera Roll"){
+                            self.sourceType = .photoLibrary
+                            isImagePickerShowing = true
+                            imageDisabled = false
+                        }
+                        Button("Take a Photo"){
+                            self.sourceType = .camera
+                            isImagePickerShowing = true
+                            imageDisabled = true
+                            
+                        }
+                    }
+                    .sheet(isPresented: $isImagePickerShowing) {
+                        ImagePicker(selectedImage: $selectedImage, isImagePickerShowing: $isImagePickerShowing, sourceType: self.sourceType)
+                    }
+                    
                     VStack(alignment: .leading){
                         Text("🔥 Streaks:")
                             .font(Font.custom("Times New Roman MT Std Condensed", size: 40))
