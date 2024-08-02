@@ -22,7 +22,7 @@ struct profileView: View {
                 VStack(alignment:.leading){
                     HStack (alignment: .top){
                         Text ("Your Profile")
-                            .font(Font.custom("Times New Roman MT Condensed Italic", size: 60))
+                            .font(Font.custom("Times New Roman MT Condensed Italic", size: 50))
                             .foregroundColor(Color(red: 57/255, green: 60/255, blue: 90/255))
                             .padding(.leading)
                             .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
@@ -48,27 +48,26 @@ struct profileView: View {
                     //     }
                     // }
                     Menu {
-                        Button("Open Camera Roll"){
+                        Button("Open Camera Roll") {
                             self.sourceType = .photoLibrary
                             isImagePickerShowing = true
                             imageDisabled = false
                         }
-                        Button("Take a Photo"){
+                        Button("Take a Photo") {
                             self.sourceType = .camera
                             isImagePickerShowing = true
                             imageDisabled = true
-                            
                         }
-                    } label {
+                    } label: {
                         Text("Edit Profile Picture")
+                            .font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))  // Customize the font of the label
+                            .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))  // Change the color of the label
+                            .padding()  // Add padding around the label
+                            .background(Color(.lightGray))  // Add background color to the label
+                            .clipShape(Rectangle())
+                            .cornerRadius(15)
                     }
-                    .font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))  // Customize the font of the label
-                    .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))  // Change the color of the label
-                    .padding()  // Add padding around the label
-                    .background(Color.(.lightgray))  // Add background color to the label
-                    .clipShape(Rectangle())
-                    .cornerRadius(15)
-                    
+                   
                     .sheet(isPresented: $isImagePickerShowing) {
                         ImagePicker(selectedImage: $selectedImage, isImagePickerShowing: $isImagePickerShowing, sourceType: self.sourceType)
                     }
