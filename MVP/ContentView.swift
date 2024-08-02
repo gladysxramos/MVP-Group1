@@ -396,35 +396,7 @@ struct ContentView: View {
                     CreateCategoryView()
                 }
             })
-            .toolbar {
-                
-                ToolbarItemGroup(placement: .primaryAction) {
-                    Button {
-                        showCreateCategory.toggle()
-                    } label: {
-                        Image(systemName: "plus")
-                    }
-                }
-                
-                ToolbarItemGroup(placement: .topBarTrailing) {
-                    
-                    Menu {
-                        Button("Delete Clothing Items"){
-                            
-                        }
-                       
-                        Button("Edit an Item"){
-                            
-                        }
-                       
-                        
-                    } label: {
-                        Text("Edit")
-                }
-                    
-                }
-                
-            }
+           
             
         }
     }
