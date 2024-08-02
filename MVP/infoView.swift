@@ -58,10 +58,11 @@ struct infoView: View {
                                                 }
                         
                     }
-//                    if showfastFashionView{
-//                        fastFashionView(showfastFashionView: $showfastFashionView)}
-//                    if showtheFactsView{
-//                        theFactsView(showtheFactsView: $showtheFactsView)}
+                    if showfastFashionView{
+                        fastFashionView(showfastFashionView: $showfastFashionView)}
+                    if showtheFactsView{
+                        theFactsView(showtheFactsView: $showtheFactsView)}
+
                     Spacer()
                     //Toolbar
                     HStack (alignment : .top){

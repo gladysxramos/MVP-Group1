@@ -37,6 +37,12 @@
 		829F3D0B2C5C94ED00109B1A /* Image PIcker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3D0A2C5C94ED00109B1A /* Image PIcker.swift */; };
 		829F3D0D2C5C954000109B1A /* addNewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3D0C2C5C954000109B1A /* addNewImage.swift */; };
 		829F3D0F2C5C9E6900109B1A /* mapPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3D0E2C5C9E6900109B1A /* mapPopUp.swift */; };
+		829F3D122C5D3E1E00109B1A /* AtkinsonHyperlegible-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 829F3D102C5D3E1E00109B1A /* AtkinsonHyperlegible-Regular.ttf */; };
+		829F3D132C5D3E1E00109B1A /* AtkinsonHyperlegible-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 829F3D112C5D3E1E00109B1A /* AtkinsonHyperlegible-Bold.ttf */; };
+		829F3D152C5D3F0900109B1A /* Times New Roman MT Condensed Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 829F3D142C5D3F0800109B1A /* Times New Roman MT Condensed Italic.otf */; };
+		829F3D192C5D3F3000109B1A /* Times New Roman MT Std Condensed.otf in Resources */ = {isa = PBXBuildFile; fileRef = 829F3D182C5D3F3000109B1A /* Times New Roman MT Std Condensed.otf */; };
+		829F3D1B2C5D513A00109B1A /* fastFashionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3D1A2C5D513A00109B1A /* fastFashionView.swift */; };
+		829F3D1D2C5D518100109B1A /* theFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3D1C2C5D518100109B1A /* theFactView.swift */; };
 		BD9ED9532C5BF581002CA601 /* SwiftUIImageViewer in Frameworks */ = {isa = PBXBuildFile; productRef = BD9ED9522C5BF581002CA601 /* SwiftUIImageViewer */; };
 		BDA9BEEF2C584A110055FF8E /* MVPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9BEEE2C584A110055FF8E /* MVPApp.swift */; };
 		BDA9BEF12C584A110055FF8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9BEF02C584A110055FF8E /* ContentView.swift */; };
@@ -99,7 +105,12 @@
 		829F3D0A2C5C94ED00109B1A /* Image PIcker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Image PIcker.swift"; path = "../../ImageData-main/PracticeCamera/Image PIcker.swift"; sourceTree = "<group>"; };
 		829F3D0C2C5C954000109B1A /* addNewImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = addNewImage.swift; path = "../../ImageData-main/PracticeCamera/addNewImage.swift"; sourceTree = "<group>"; };
 		829F3D0E2C5C9E6900109B1A /* mapPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = mapPopUp.swift; path = ../mapPopUp.swift; sourceTree = "<group>"; };
-		BD9864A72C5C2B6A0007C8FA /* fastFashionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fastFashionView.swift; sourceTree = "<group>"; };
+		829F3D102C5D3E1E00109B1A /* AtkinsonHyperlegible-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AtkinsonHyperlegible-Regular.ttf"; sourceTree = "<group>"; };
+		829F3D112C5D3E1E00109B1A /* AtkinsonHyperlegible-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AtkinsonHyperlegible-Bold.ttf"; sourceTree = "<group>"; };
+		829F3D142C5D3F0800109B1A /* Times New Roman MT Condensed Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Times New Roman MT Condensed Italic.otf"; sourceTree = "<group>"; };
+		829F3D182C5D3F3000109B1A /* Times New Roman MT Std Condensed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Times New Roman MT Std Condensed.otf"; sourceTree = "<group>"; };
+		829F3D1A2C5D513A00109B1A /* fastFashionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fastFashionView.swift; sourceTree = "<group>"; };
+		829F3D1C2C5D518100109B1A /* theFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theFactView.swift; sourceTree = "<group>"; };
 		BD9864A92C5C3A890007C8FA /* theFactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theFactsView.swift; sourceTree = "<group>"; };
 		BDA9BEEB2C584A110055FF8E /* MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDA9BEEE2C584A110055FF8E /* MVPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPApp.swift; sourceTree = "<group>"; };
@@ -113,13 +124,9 @@
 		BDA9BF0B2C584A120055FF8E /* MVPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BDA9BF1D2C584DDF0055FF8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BDAC53622C5AA30900706A15 /* infoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoView.swift; sourceTree = "<group>"; };
-		BDCEB2622C595D2900BA9966 /* Times New Roman MT Std Condensed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Times New Roman MT Std Condensed.otf"; sourceTree = "<group>"; };
-		BDCEB2652C59621800BA9966 /* Times New Roman MT Condensed Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Times New Roman MT Condensed Italic.otf"; sourceTree = "<group>"; };
-		BDCEB2682C5984B300BA9966 /* AtkinsonHyperlegible-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AtkinsonHyperlegible-Bold.ttf"; sourceTree = "<group>"; };
 		BDCEB2692C598DF900BA9966 /* calendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarView.swift; sourceTree = "<group>"; };
 		BDEE114B2C5AB84B0091E608 /* profileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileView.swift; sourceTree = "<group>"; };
 		BDEE114D2C5AB8710091E608 /* mapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapView.swift; sourceTree = "<group>"; };
-		BDFE43A62C5AD74E00A9C9F7 /* AtkinsonHyperlegible-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AtkinsonHyperlegible-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,10 +190,10 @@
 		BDA9BEE22C584A110055FF8E = {
 			isa = PBXGroup;
 			children = (
-				BDCEB2622C595D2900BA9966 /* Times New Roman MT Std Condensed.otf */,
-				BDCEB2682C5984B300BA9966 /* AtkinsonHyperlegible-Bold.ttf */,
-				BDFE43A62C5AD74E00A9C9F7 /* AtkinsonHyperlegible-Regular.ttf */,
-				BDCEB2652C59621800BA9966 /* Times New Roman MT Condensed Italic.otf */,
+				829F3D112C5D3E1E00109B1A /* AtkinsonHyperlegible-Bold.ttf */,
+				829F3D102C5D3E1E00109B1A /* AtkinsonHyperlegible-Regular.ttf */,
+				829F3D182C5D3F3000109B1A /* Times New Roman MT Std Condensed.otf */,
+				829F3D142C5D3F0800109B1A /* Times New Roman MT Condensed Italic.otf */,
 				829F3CF42C5C8F8000109B1A /* CoreMLHelpers */,
 				BDA9BEED2C584A110055FF8E /* MVP */,
 				BDA9BEFE2C584A120055FF8E /* MVPTests */,
@@ -221,8 +228,9 @@
 				BDEE114B2C5AB84B0091E608 /* profileView.swift */,
 				BDEE114D2C5AB8710091E608 /* mapView.swift */,
 				BDAC53622C5AA30900706A15 /* infoView.swift */,
-				BD9864A72C5C2B6A0007C8FA /* fastFashionView.swift */,
+				829F3D1A2C5D513A00109B1A /* fastFashionView.swift */,
 				BD9864A92C5C3A890007C8FA /* theFactsView.swift */,
+				829F3D1C2C5D518100109B1A /* theFactView.swift */,
 				829F3CCE2C5C727C00109B1A /* CategoriesJSONDecoder.swift */,
 				829F3CDC2C5C730500109B1A /* TodoView.swift */,
 				829F3CD32C5C727C00109B1A /* CreateCategoryView.swift */,
@@ -372,9 +380,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				829F3D122C5D3E1E00109B1A /* AtkinsonHyperlegible-Regular.ttf in Resources */,
+				829F3D192C5D3F3000109B1A /* Times New Roman MT Std Condensed.otf in Resources */,
+				829F3D152C5D3F0900109B1A /* Times New Roman MT Condensed Italic.otf in Resources */,
 				BDA9BEF62C584A120055FF8E /* Preview Assets.xcassets in Resources */,
 				BDA9BEF32C584A120055FF8E /* Assets.xcassets in Resources */,
 				829F3CE22C5C772800109B1A /* DefaultCategories.json in Resources */,
+				829F3D132C5D3E1E00109B1A /* AtkinsonHyperlegible-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,9 +436,11 @@
 				829F3CF72C5C8F8000109B1A /* CGImage+RawBytes.swift in Sources */,
 				829F3CD42C5C727D00109B1A /* CategoriesJSONDecoder.swift in Sources */,
 				BDA9BEEF2C584A110055FF8E /* MVPApp.swift in Sources */,
+				829F3D1B2C5D513A00109B1A /* fastFashionView.swift in Sources */,
 				829F3D0D2C5C954000109B1A /* addNewImage.swift in Sources */,
 				BDEE114C2C5AB84B0091E608 /* profileView.swift in Sources */,
 				829F3CFC2C5C8F8000109B1A /* CVPixelBuffer+Rotate.swift in Sources */,
+				829F3D1D2C5D518100109B1A /* theFactView.swift in Sources */,
 				829F3D002C5C8F8000109B1A /* MLMultiArray+Image.swift in Sources */,
 				829F3D022C5C8F8000109B1A /* Predictions.swift in Sources */,
 				829F3CD82C5C727D00109B1A /* ModifyTodoView.swift in Sources */,
@@ -597,10 +611,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MVP/Preview Content\"";
-				DEVELOPMENT_TEAM = 9S98BN32U6;
+				DEVELOPMENT_TEAM = AHC35PLFL5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MVP/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Cloud Closet";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera and camera roll.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to access your location.";
@@ -615,7 +630,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = KWK.MVP;
+				PRODUCT_BUNDLE_IDENTIFIER = KWK.CloudCloset;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -631,10 +646,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MVP/Preview Content\"";
-				DEVELOPMENT_TEAM = 9S98BN32U6;
+				DEVELOPMENT_TEAM = AHC35PLFL5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MVP/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Cloud Closet";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera and camera roll.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to access your location.";
@@ -649,7 +665,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = KWK.MVP;
+				PRODUCT_BUNDLE_IDENTIFIER = KWK.CloudCloset;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

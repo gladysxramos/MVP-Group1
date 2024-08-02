@@ -83,7 +83,7 @@ struct ContentView: View {
                                 .font(Font.custom("Times New Roman MT Condensed Italic", size: 60))
                                 .foregroundColor(Color(red: 57/255, green: 60/255, blue: 90/255))
                             Spacer()
-                            NavigationLink(destination: calendarView()) {
+                            NavigationLink(destination: calendarView().navigationBarBackButtonHidden(true)) {
                                 Image("calendaricon")
                                     .resizable(resizingMode: .stretch)
                                     .aspectRatio(contentMode: .fit)
@@ -96,7 +96,9 @@ struct ContentView: View {
                                         .frame(width: 50.0, height: 70.0)
                                     
                                 }
+                                       
                                 )
+            
                             }
                         }.padding(.horizontal)
                         Text("_________________________________________")
@@ -117,8 +119,9 @@ struct ContentView: View {
                                             if category!.title == "Tops"{
                                                 VStack{
                                                     Text(item.title)
-                                                    
-                                                    
+                                                        .font(Font.custom("AtikinsonHyperlegible-Regular", size: 24))
+                                                        .padding()
+                                                        .foregroundColor(Color(red: 57/255, green: 60/255, blue: 90/255))
                                                     if let selectedPhotoData = item.image,
                                                        let uiImage = UIImage(data: selectedPhotoData) {
                                                         Image(uiImage: uiImage)
@@ -126,6 +129,7 @@ struct ContentView: View {
                                                             .scaledToFill()
                                                             .frame(maxWidth: 150, maxHeight: 150)
                                                             .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                                                            .padding()
                                                             .onTapGesture {
                                                                 selectedImage = uiImage
                                                                 isImageViewerPresented = true
@@ -133,8 +137,9 @@ struct ContentView: View {
                                                     }
                                                     
                                                 }
-                                               
-                                                
+                                                .background(Rectangle())
+                                                .foregroundColor(.white)
+                                                .cornerRadius(15)
                                             }
                                                                     
                                         }
@@ -154,14 +159,16 @@ struct ContentView: View {
                                             if category!.title == "Bottoms"{
                                                 VStack{
                                                     Text(item.title)
-                                                    
-                                                    
+                                                        .font(Font.custom("AtikinsonHyperlegible-Regular", size: 24))
+                                                        .padding()
+                                                        .foregroundColor(Color(red: 57/255, green: 60/255, blue: 90/255))
                                                     if let selectedPhotoData = item.image,
                                                        let uiImage = UIImage(data: selectedPhotoData) {
                                                         Image(uiImage: uiImage)
                                                             .resizable()
                                                             .scaledToFill()
                                                             .frame(maxWidth: 150, maxHeight: 150)
+                                                            .padding()
                                                             .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
                                                             .onTapGesture {
                                                                 selectedImage = uiImage
@@ -170,7 +177,9 @@ struct ContentView: View {
                                                     }
                                                     
                                                 }
-                                                
+                                                .background(Rectangle())
+                                                .foregroundColor(.white)
+                                                .cornerRadius(15)
                                             }
                                                                       
                                            
@@ -191,13 +200,16 @@ struct ContentView: View {
                                             if category!.title == "Outerwear"{
                                                 VStack{
                                                     Text(item.title)
-                                                    
-                                                    
+                                                        .font(Font.custom("AtikinsonHyperlegible-Regular", size: 24))
+                                                        .foregroundColor(Color(red: 57/255, green: 60/255, blue: 90/255))
+                                                        .padding()
+            
                                                     if let selectedPhotoData = item.image,
                                                        let uiImage = UIImage(data: selectedPhotoData) {
                                                         Image(uiImage: uiImage)
                                                             .resizable()
                                                             .scaledToFill()
+                                                            .padding()
                                                             .frame(maxWidth: 150, maxHeight: 150)
                                                             .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
                                                             .onTapGesture {
@@ -207,7 +219,9 @@ struct ContentView: View {
                                                     }
                                                     
                                                 }
-                                                
+                                                .background(Rectangle())
+                                                .foregroundColor(.white)
+                                                .cornerRadius(15)
                                             }
                                                                       
                                            
@@ -229,13 +243,16 @@ struct ContentView: View {
                                             if category!.title == "Footwear"{
                                                 VStack{
                                                     Text(item.title)
-                                                    
+                                                        .font(Font.custom("AtikinsonHyperlegible-Regular", size: 24))
+                                                        .foregroundColor(Color(red: 57/255, green: 60/255, blue: 90/255))
+                                                        .padding()
                                                     
                                                     if let selectedPhotoData = item.image,
                                                        let uiImage = UIImage(data: selectedPhotoData) {
                                                         Image(uiImage: uiImage)
                                                             .resizable()
                                                             .scaledToFill()
+                                                            .padding()
                                                             .frame(maxWidth: 150, maxHeight: 150)
                                                             .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
                                                             .onTapGesture {
@@ -245,7 +262,9 @@ struct ContentView: View {
                                                     }
                                                     
                                                 }
-                                                
+                                                .background(Rectangle())
+                                                .foregroundColor(.white)
+                                                .cornerRadius(15)
                                                 
                                             }
                                                                       
@@ -267,7 +286,9 @@ struct ContentView: View {
                                             if category!.title == "Bags"{
                                                 VStack{
                                                     Text(item.title)
-                                                    
+                                                        .font(Font.custom("AtikinsonHyperlegible-Regular", size: 24))
+                                                        .foregroundColor(Color(red: 57/255, green: 60/255, blue: 90/255))
+                                                        .padding()
                                                     
                                                     if let selectedPhotoData = item.image,
                                                        let uiImage = UIImage(data: selectedPhotoData) {
@@ -275,6 +296,7 @@ struct ContentView: View {
                                                             .resizable()
                                                             .scaledToFill()
                                                             .frame(maxWidth: 150, maxHeight: 150)
+                                                            .padding()
                                                             .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
                                                             .onTapGesture {
                                                                 selectedImage = uiImage
@@ -283,7 +305,9 @@ struct ContentView: View {
                                                     }
                                                     
                                                 }
-                                                
+                                                .background(Rectangle())
+                                                .foregroundColor(.white)
+                                                .cornerRadius(15)
                                             }
                                                                       
                                            
@@ -303,7 +327,9 @@ struct ContentView: View {
                                             if category!.title == "Accessories"{
                                                 VStack{
                                                     Text(item.title)
-                                                    
+                                                        .font(Font.custom("AtikinsonHyperlegible-Regular", size: 24))
+                                                        .foregroundColor(Color(red: 57/255, green: 60/255, blue: 90/255))
+                                                        .padding()
                                                     
                                                     if let selectedPhotoData = item.image,
                                                        let uiImage = UIImage(data: selectedPhotoData) {
@@ -311,6 +337,7 @@ struct ContentView: View {
                                                             .resizable()
                                                             .scaledToFill()
                                                             .frame(maxWidth: 150, maxHeight: 150)
+                                                            .padding()
                                                             .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
                                                             .onTapGesture {
                                                                 selectedImage = uiImage
@@ -319,6 +346,9 @@ struct ContentView: View {
                                                     }
                                                     
                                                 }
+                                                .background(Rectangle())
+                                                .foregroundColor(.white)
+                                                .cornerRadius(15)
                                                 
                                             }
                                                                       
@@ -331,6 +361,9 @@ struct ContentView: View {
                             }
                             .padding(.horizontal)
                         }
+                        //if showWarning {
+                        
+                    //}
                         Spacer()
                         //Toolbar
                         HStack (alignment : .top){
@@ -370,6 +403,7 @@ struct ContentView: View {
                         .background(Rectangle())
                         .foregroundColor(Color(red: 57/255, green: 60/255, blue: 90/255))
                         .cornerRadius(45)
+                        .padding(.horizontal)
                        
                         
                     }
