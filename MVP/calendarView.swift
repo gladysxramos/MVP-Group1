@@ -144,106 +144,112 @@ struct calendarView: View {
     @State var selectedDate = Date()
     
     var body: some View {
-        ZStack (alignment: .bottom){
-            Color(red: 247/255, green: 240/255, blue: 233/255)
-                .ignoresSafeArea()
-            VStack {
-                    Text ("Calendar Archive")
-                        .font(Font.custom("Times New Roman MT Condensed Italic", size: 60))
-                        .foregroundColor(Color(red: 57/255, green: 60/255, blue: 90/255))
-                    CustomDatePicker(selectedDate: $selectedDate)
-                        .padding()
-                        .font(Font.custom("AtkinsonHyperlegible-Regular", size: 20))
+        NavigationStack{
+            ZStack (alignment: .bottom){
+                Color(red: 247/255, green: 240/255, blue: 233/255)
+                    .ignoresSafeArea()
+                VStack {
+                        Text ("Calendar Archive")
+                            .font(Font.custom("Times New Roman MT Condensed Italic", size: 60))
+                            .foregroundColor(Color(red: 57/255, green: 60/255, blue: 90/255))
+                        CustomDatePicker(selectedDate: $selectedDate)
+                            .padding()
+                            .font(Font.custom("AtkinsonHyperlegible-Regular", size: 20))
+                            .foregroundColor(Color(red: 40/255, green: 80/255, blue: 46/255))
+                        .background(Rectangle())
+                        .foregroundColor(.white)
+                        .cornerRadius(15)
+                        .padding(.horizontal)
+                        
+                    Text(selectedDate.formatted(date: .abbreviated, time: .omitted)+"'s Outfit")
+                        .font(Font.custom("AtkinsonHyperlegible-Regular", size: 30))
                         .foregroundColor(Color(red: 40/255, green: 80/255, blue: 46/255))
-                    .background(Rectangle())
-                    .foregroundColor(.white)
-                    .cornerRadius(15)
-                    .padding(.horizontal)
-                    
-                Text(selectedDate.formatted(date: .abbreviated, time: .omitted)+"'s Outfit")
-                    .font(Font.custom("AtkinsonHyperlegible-Regular", size: 30))
-                    .foregroundColor(Color(red: 40/255, green: 80/255, blue: 46/255))
-                // <-- you can customize (or omit it altogether) however you like!
-                ScrollView{
-                    VStack(alignment:.leading){
-                        Text("                                                                                           ")
-                        Text("Top:")
-                            .font(Font.custom("AtkinsonHyperlegible-Regular", size: 25))
-                            .foregroundColor(Color(red: 71/255, green: 134/255, blue: 46/255))
-                            .padding(.leading)
-                        Text("Bottom:")
-                            .font(Font.custom("AtkinsonHyperlegible-Regular", size: 25))
-                            .foregroundColor(Color(red: 71/255, green: 134/255, blue: 46/255))
-                            .padding(.leading)
-                        Text("Outwear:")
-                            .font(Font.custom("AtkinsonHyperlegible-Regular", size: 25))
-                            .foregroundColor(Color(red: 71/255, green: 134/255, blue: 46/255))
-                            .padding(.leading)
-                        Text("Footwear:")
-                            .font(Font.custom("AtkinsonHyperlegible-Regular", size: 25))
-                            .foregroundColor(Color(red: 71/255, green: 134/255, blue: 46/255))
-                            .padding(.leading)
-                        Text("Bags:")
-                            .font(Font.custom("AtkinsonHyperlegible-Regular", size: 25))
-                            .foregroundColor(Color(red: 71/255, green: 134/255, blue: 46/255))
-                            .padding(.leading)
-                        Text("Accessories:")
-                            .font(Font.custom("AtkinsonHyperlegible-Regular", size: 25))
-                            .foregroundColor(Color(red: 71/255, green: 134/255, blue: 46/255))
-                            .padding(.leading)
-                        Text("Other:")
-                            .font(Font.custom("AtkinsonHyperlegible-Regular", size: 25))
-                            .foregroundColor(Color(red: 71/255, green: 134/255, blue: 46/255))
-                            .padding(.leading)
+                    // <-- you can customize (or omit it altogether) however you like!
+                    ScrollView{
+                        VStack(alignment:.leading){
+                            Text("                                                                                           ")
+                            Text("Top:")
+                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 25))
+                                .foregroundColor(Color(red: 71/255, green: 134/255, blue: 46/255))
+                                .padding(.leading)
+                            Text("Bottom:")
+                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 25))
+                                .foregroundColor(Color(red: 71/255, green: 134/255, blue: 46/255))
+                                .padding(.leading)
+                            Text("Outwear:")
+                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 25))
+                                .foregroundColor(Color(red: 71/255, green: 134/255, blue: 46/255))
+                                .padding(.leading)
+                            Text("Footwear:")
+                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 25))
+                                .foregroundColor(Color(red: 71/255, green: 134/255, blue: 46/255))
+                                .padding(.leading)
+                            Text("Bags:")
+                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 25))
+                                .foregroundColor(Color(red: 71/255, green: 134/255, blue: 46/255))
+                                .padding(.leading)
+                            Text("Accessories:")
+                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 25))
+                                .foregroundColor(Color(red: 71/255, green: 134/255, blue: 46/255))
+                                .padding(.leading)
+                            Text("Other:")
+                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 25))
+                                .foregroundColor(Color(red: 71/255, green: 134/255, blue: 46/255))
+                                .padding(.leading)
+                        }
                     }
-                }
-                .background(Rectangle())
-                .foregroundColor(Color(red: 40/255, green: 80/255, blue: 46/255))
-                .frame(width: 400.0)
-                Spacer()
-                //Toolbar
-                HStack (alignment : .top){
-                    NavigationLink(destination: ContentView()) {
-                        Image("home icon")
+                    .background(Rectangle())
+                    .foregroundColor(Color(red: 40/255, green: 80/255, blue: 46/255))
+                    .frame(width: 400.0)
+                    Spacer()
+                    //Toolbar
+                    HStack (alignment : .top){
+                        NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true)) {
+                            Image("home icon")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding([.top, .leading, .bottom], 10.0)
+                            .frame(width: 70.0, height: 70.0)}
+                        NavigationLink(destination: infoView().navigationBarBackButtonHidden(true)){
+                            Image("info icon")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding([.top, .leading, .bottom], 10.0)
+                                .frame(width: 70.0, height: 70.0)
+                        }
+                       
+                        Image("blank")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
                             .padding([.top, .leading, .bottom], 10.0)
-                        .frame(width: 70.0, height: 70.0)}
-                    Image("info icon")
-                        .resizable(resizingMode: .stretch)
-                        .aspectRatio(contentMode: .fit)
-                        .padding([.top, .leading, .bottom], 10.0)
-                        .frame(width: 70.0, height: 70.0)
-                    Image("blank")
-                        .resizable(resizingMode: .stretch)
-                        .aspectRatio(contentMode: .fit)
-                        .padding([.top, .leading, .bottom], 10.0)
-                        .frame(width: 70.0, height: 70.0)
-                    NavigationLink(destination: mapView()){
-                        Image("map icon")
+                            .frame(width: 70.0, height: 70.0)
+                        NavigationLink(destination: mapView().navigationBarBackButtonHidden(true)){
+                            Image("map icon")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding([.top, .leading, .bottom], 10.0)
+                            .frame(width: 70.0, height: 70.0)}
+                        NavigationLink(destination: profileView().navigationBarBackButtonHidden(true)) {
+                            Image("profile icon")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding([.top, .bottom, .trailing], 10.0)
+                            .frame(width: 70.0, height: 70.0)}
+                    }
+                    .background(Rectangle())
+                    .foregroundColor(Color(red: 57/255, green: 60/255, blue: 90/255))
+                    .cornerRadius(45)}
+                    Button{
+                        var hi = 1
+                    } label: {
+                        Image("plus icon")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
-                            .padding([.top, .leading, .bottom], 10.0)
-                        .frame(width: 70.0, height: 70.0)}
-                    NavigationLink(destination: profileView()) {
-                        Image("profile icon")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                            .padding([.top, .bottom, .trailing], 10.0)
-                        .frame(width: 70.0, height: 70.0)}
+                            .frame(width: 100.0, height: 100.0)
                 }
-                .background(Rectangle())
-                .foregroundColor(Color(red: 57/255, green: 60/255, blue: 90/255))
-                .cornerRadius(45)}
-                Button{
-                    var hi = 1
-                } label: {
-                    Image("plus icon")
-                        .resizable(resizingMode: .stretch)
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 100.0, height: 100.0)
             }
         }
+        
     }
 }
 

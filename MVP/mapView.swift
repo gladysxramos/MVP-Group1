@@ -174,13 +174,13 @@ struct mapView: View {
                                 .foregroundColor(Color(red: 40/255, green: 80/255, blue: 46/255))
                             Spacer()}.padding(.horizontal)}
                HStack (alignment : .top){
-                   NavigationLink(destination: ContentView()) {
+                   NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true)) {
                        Image("home icon")
                            .resizable(resizingMode: .stretch)
                            .aspectRatio(contentMode: .fit)
                            .padding([.top, .leading, .bottom], 10.0)
                        .frame(width: 70.0, height: 70.0)}
-                   NavigationLink(destination: infoView()) {
+                   NavigationLink(destination: infoView().navigationBarBackButtonHidden(true)) {
                        Image("info icon")
                            .resizable(resizingMode: .stretch)
                            .aspectRatio(contentMode: .fit)
@@ -196,7 +196,7 @@ struct mapView: View {
                        .aspectRatio(contentMode: .fit)
                        .padding([.top, .leading, .bottom], 10.0)
                        .frame(width: 70.0, height: 70.0)
-                   NavigationLink(destination: profileView()) {
+                   NavigationLink(destination: profileView().navigationBarBackButtonHidden(true)) {
                        Image("profile icon")
                            .resizable(resizingMode: .stretch)
                            .aspectRatio(contentMode: .fit)

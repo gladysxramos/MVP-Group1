@@ -339,7 +339,7 @@ struct ContentView: View {
                                 .aspectRatio(contentMode: .fit)
                                 .padding([.top, .leading, .bottom], 10.0)
                                 .frame(width: 70.0, height: 70.0)
-                            NavigationLink(destination: infoView()) {
+                            NavigationLink(destination: infoView().navigationBarBackButtonHidden(true)) {
                                 Image("info icon")
                                     .resizable(resizingMode: .stretch)
                                     .aspectRatio(contentMode: .fit)
@@ -350,18 +350,21 @@ struct ContentView: View {
                                 .aspectRatio(contentMode: .fit)
                                 .padding([.top, .leading, .bottom], 10.0)
                                 .frame(width: 70.0, height: 70.0)
-                            NavigationLink(destination: mapView()){
+                            
+                            NavigationLink(destination: mapView().navigationBarBackButtonHidden(true)){
                                 Image("map icon")
                                     .resizable(resizingMode: .stretch)
                                     .aspectRatio(contentMode: .fit)
                                     .padding([.top, .leading, .bottom], 10.0)
                                 .frame(width: 70.0, height: 70.0)}
-                            NavigationLink(destination: profileView()) {
+                            
+                            NavigationLink(destination: profileView().navigationBarBackButtonHidden(true)) {
                                 Image("profile icon")
                                     .resizable(resizingMode: .stretch)
                                     .aspectRatio(contentMode: .fit)
                                     .padding([.top, .bottom, .trailing], 10.0)
                                 .frame(width: 70.0, height: 70.0)}
+                                .navigationBarBackButtonHidden(true)
                         }
                         
                         .background(Rectangle())
