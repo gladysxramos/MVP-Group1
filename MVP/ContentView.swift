@@ -223,6 +223,7 @@ struct ContentView: View {
                                     .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                 ScrollView(.horizontal){
                                     HStack(spacing: 20) {
+                                        
                                         ForEach(filteredItems) { item in
                                             let category = item.category
                                             if category!.title == "Footwear"{
@@ -244,6 +245,7 @@ struct ContentView: View {
                                                     }
                                                     
                                                 }
+                                                
                                                 
                                             }
                                                                       

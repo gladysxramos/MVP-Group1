@@ -15,6 +15,25 @@
 		829F3CDB2C5C72F500109B1A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CDA2C5C72F500109B1A /* Item.swift */; };
 		829F3CDD2C5C730500109B1A /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CDC2C5C730500109B1A /* TodoView.swift */; };
 		829F3CE22C5C772800109B1A /* DefaultCategories.json in Resources */ = {isa = PBXBuildFile; fileRef = 829F3CE12C5C772800109B1A /* DefaultCategories.json */; };
+		829F3CF52C5C8F8000109B1A /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CE32C5C8F8000109B1A /* Array+Extensions.swift */; };
+		829F3CF62C5C8F8000109B1A /* CGImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CE42C5C8F8000109B1A /* CGImage+CVPixelBuffer.swift */; };
+		829F3CF72C5C8F8000109B1A /* CGImage+RawBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CE52C5C8F8000109B1A /* CGImage+RawBytes.swift */; };
+		829F3CF82C5C8F8000109B1A /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CE62C5C8F8000109B1A /* CGImagePropertyOrientation.swift */; };
+		829F3CF92C5C8F8000109B1A /* CoreML+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CE72C5C8F8000109B1A /* CoreML+Combine.swift */; };
+		829F3CFA2C5C8F8000109B1A /* CVPixelBuffer+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CE82C5C8F8000109B1A /* CVPixelBuffer+Create.swift */; };
+		829F3CFB2C5C8F8000109B1A /* CVPixelBuffer+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CE92C5C8F8000109B1A /* CVPixelBuffer+Resize.swift */; };
+		829F3CFC2C5C8F8000109B1A /* CVPixelBuffer+Rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CEA2C5C8F8000109B1A /* CVPixelBuffer+Rotate.swift */; };
+		829F3CFD2C5C8F8000109B1A /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CEB2C5C8F8000109B1A /* Math.swift */; };
+		829F3CFE2C5C8F8000109B1A /* MLModel+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CEC2C5C8F8000109B1A /* MLModel+Images.swift */; };
+		829F3CFF2C5C8F8000109B1A /* MLMultiArray+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CED2C5C8F8000109B1A /* MLMultiArray+Helpers.swift */; };
+		829F3D002C5C8F8000109B1A /* MLMultiArray+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CEE2C5C8F8000109B1A /* MLMultiArray+Image.swift */; };
+		829F3D012C5C8F8000109B1A /* NonMaxSuppression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CEF2C5C8F8000109B1A /* NonMaxSuppression.swift */; };
+		829F3D022C5C8F8000109B1A /* Predictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CF02C5C8F8000109B1A /* Predictions.swift */; };
+		829F3D032C5C8F8000109B1A /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CF12C5C8F8000109B1A /* UIImage+CVPixelBuffer.swift */; };
+		829F3D042C5C8F8000109B1A /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CF22C5C8F8000109B1A /* UIImage+Extensions.swift */; };
+		829F3D052C5C8F8000109B1A /* UIImage+RawBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3CF32C5C8F8000109B1A /* UIImage+RawBytes.swift */; };
+		829F3D072C5C8F9C00109B1A /* DeepLabV3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 829F3D062C5C8F9C00109B1A /* DeepLabV3.mlmodel */; };
+		829F3D092C5C8FB700109B1A /* BackgroundRemover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F3D082C5C8FB700109B1A /* BackgroundRemover.swift */; };
 		BD9ED9532C5BF581002CA601 /* SwiftUIImageViewer in Frameworks */ = {isa = PBXBuildFile; productRef = BD9ED9522C5BF581002CA601 /* SwiftUIImageViewer */; };
 		BDA9BEEF2C584A110055FF8E /* MVPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9BEEE2C584A110055FF8E /* MVPApp.swift */; };
 		BDA9BEF12C584A110055FF8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9BEF02C584A110055FF8E /* ContentView.swift */; };
@@ -55,6 +74,25 @@
 		829F3CDA2C5C72F500109B1A /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = "../../youtube-content-2023-main/See How To Store An Image In SwiftData 📸 | SwiftData Tutorial/Source Code/Final/ToDos/ToDos/Item.swift"; sourceTree = "<group>"; };
 		829F3CDC2C5C730500109B1A /* TodoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodoView.swift; path = "../../youtube-content-2023-main/See How To Store An Image In SwiftData 📸 | SwiftData Tutorial/Source Code/Final/ToDos/ToDos/TodoView.swift"; sourceTree = "<group>"; };
 		829F3CE12C5C772800109B1A /* DefaultCategories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = DefaultCategories.json; path = ../../../.Trash/DefaultCategories.json; sourceTree = "<group>"; };
+		829F3CE32C5C8F8000109B1A /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		829F3CE42C5C8F8000109B1A /* CGImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
+		829F3CE52C5C8F8000109B1A /* CGImage+RawBytes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImage+RawBytes.swift"; sourceTree = "<group>"; };
+		829F3CE62C5C8F8000109B1A /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
+		829F3CE72C5C8F8000109B1A /* CoreML+Combine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreML+Combine.swift"; sourceTree = "<group>"; };
+		829F3CE82C5C8F8000109B1A /* CVPixelBuffer+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Create.swift"; sourceTree = "<group>"; };
+		829F3CE92C5C8F8000109B1A /* CVPixelBuffer+Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Resize.swift"; sourceTree = "<group>"; };
+		829F3CEA2C5C8F8000109B1A /* CVPixelBuffer+Rotate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Rotate.swift"; sourceTree = "<group>"; };
+		829F3CEB2C5C8F8000109B1A /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		829F3CEC2C5C8F8000109B1A /* MLModel+Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MLModel+Images.swift"; sourceTree = "<group>"; };
+		829F3CED2C5C8F8000109B1A /* MLMultiArray+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MLMultiArray+Helpers.swift"; sourceTree = "<group>"; };
+		829F3CEE2C5C8F8000109B1A /* MLMultiArray+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MLMultiArray+Image.swift"; sourceTree = "<group>"; };
+		829F3CEF2C5C8F8000109B1A /* NonMaxSuppression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonMaxSuppression.swift; sourceTree = "<group>"; };
+		829F3CF02C5C8F8000109B1A /* Predictions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Predictions.swift; sourceTree = "<group>"; };
+		829F3CF12C5C8F8000109B1A /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
+		829F3CF22C5C8F8000109B1A /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		829F3CF32C5C8F8000109B1A /* UIImage+RawBytes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+RawBytes.swift"; sourceTree = "<group>"; };
+		829F3D062C5C8F9C00109B1A /* DeepLabV3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = DeepLabV3.mlmodel; path = ../../DeepLabV3.mlmodel; sourceTree = "<group>"; };
+		829F3D082C5C8FB700109B1A /* BackgroundRemover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BackgroundRemover.swift; path = "../../ImageData-main/PracticeCamera/BackgroundRemover.swift"; sourceTree = "<group>"; };
 		BD9864A72C5C2B6A0007C8FA /* fastFashionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fastFashionView.swift; sourceTree = "<group>"; };
 		BD9864A92C5C3A890007C8FA /* theFactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theFactsView.swift; sourceTree = "<group>"; };
 		BDA9BEEB2C584A110055FF8E /* MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +142,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		829F3CF42C5C8F8000109B1A /* CoreMLHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				829F3CE32C5C8F8000109B1A /* Array+Extensions.swift */,
+				829F3CE42C5C8F8000109B1A /* CGImage+CVPixelBuffer.swift */,
+				829F3CE52C5C8F8000109B1A /* CGImage+RawBytes.swift */,
+				829F3CE62C5C8F8000109B1A /* CGImagePropertyOrientation.swift */,
+				829F3CE72C5C8F8000109B1A /* CoreML+Combine.swift */,
+				829F3CE82C5C8F8000109B1A /* CVPixelBuffer+Create.swift */,
+				829F3CE92C5C8F8000109B1A /* CVPixelBuffer+Resize.swift */,
+				829F3CEA2C5C8F8000109B1A /* CVPixelBuffer+Rotate.swift */,
+				829F3CEB2C5C8F8000109B1A /* Math.swift */,
+				829F3CEC2C5C8F8000109B1A /* MLModel+Images.swift */,
+				829F3CED2C5C8F8000109B1A /* MLMultiArray+Helpers.swift */,
+				829F3CEE2C5C8F8000109B1A /* MLMultiArray+Image.swift */,
+				829F3CEF2C5C8F8000109B1A /* NonMaxSuppression.swift */,
+				829F3CF02C5C8F8000109B1A /* Predictions.swift */,
+				829F3CF12C5C8F8000109B1A /* UIImage+CVPixelBuffer.swift */,
+				829F3CF22C5C8F8000109B1A /* UIImage+Extensions.swift */,
+				829F3CF32C5C8F8000109B1A /* UIImage+RawBytes.swift */,
+			);
+			name = CoreMLHelpers;
+			path = "../CoreMLHelpers-master 2/CoreMLHelpers";
+			sourceTree = "<group>";
+		};
 		BD9ED9512C5BF581002CA601 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +181,7 @@
 				BDCEB2682C5984B300BA9966 /* AtkinsonHyperlegible-Bold.ttf */,
 				BDFE43A62C5AD74E00A9C9F7 /* AtkinsonHyperlegible-Regular.ttf */,
 				BDCEB2652C59621800BA9966 /* Times New Roman MT Condensed Italic.otf */,
+				829F3CF42C5C8F8000109B1A /* CoreMLHelpers */,
 				BDA9BEED2C584A110055FF8E /* MVP */,
 				BDA9BEFE2C584A120055FF8E /* MVPTests */,
 				BDA9BF082C584A120055FF8E /* MVPUITests */,
@@ -141,7 +205,9 @@
 			children = (
 				BDA9BF1D2C584DDF0055FF8E /* Info.plist */,
 				BDA9BEEE2C584A110055FF8E /* MVPApp.swift */,
+				829F3D062C5C8F9C00109B1A /* DeepLabV3.mlmodel */,
 				BDA9BEF02C584A110055FF8E /* ContentView.swift */,
+				829F3D082C5C8FB700109B1A /* BackgroundRemover.swift */,
 				BDCEB2692C598DF900BA9966 /* calendarView.swift */,
 				BDEE114B2C5AB84B0091E608 /* profileView.swift */,
 				BDEE114D2C5AB8710091E608 /* mapView.swift */,
@@ -324,19 +390,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				829F3CF62C5C8F8000109B1A /* CGImage+CVPixelBuffer.swift in Sources */,
+				829F3CF92C5C8F8000109B1A /* CoreML+Combine.swift in Sources */,
 				BDAC53632C5AA30900706A15 /* infoView.swift in Sources */,
+				829F3CFB2C5C8F8000109B1A /* CVPixelBuffer+Resize.swift in Sources */,
 				BDCEB26A2C598DF900BA9966 /* calendarView.swift in Sources */,
 				829F3CDD2C5C730500109B1A /* TodoView.swift in Sources */,
+				829F3D012C5C8F8000109B1A /* NonMaxSuppression.swift in Sources */,
+				829F3CF52C5C8F8000109B1A /* Array+Extensions.swift in Sources */,
 				BDA9BEF12C584A110055FF8E /* ContentView.swift in Sources */,
 				829F3CD92C5C727D00109B1A /* CreateCategoryView.swift in Sources */,
+				829F3CFA2C5C8F8000109B1A /* CVPixelBuffer+Create.swift in Sources */,
+				829F3D032C5C8F8000109B1A /* UIImage+CVPixelBuffer.swift in Sources */,
+				829F3D052C5C8F8000109B1A /* UIImage+RawBytes.swift in Sources */,
+				829F3D072C5C8F9C00109B1A /* DeepLabV3.mlmodel in Sources */,
 				829F3CDB2C5C72F500109B1A /* Item.swift in Sources */,
 				829F3CD52C5C727D00109B1A /* UpdateToDoView.swift in Sources */,
+				829F3CFE2C5C8F8000109B1A /* MLModel+Images.swift in Sources */,
 				829F3CD62C5C727D00109B1A /* ItemsContainer.swift in Sources */,
+				829F3D092C5C8FB700109B1A /* BackgroundRemover.swift in Sources */,
+				829F3CFD2C5C8F8000109B1A /* Math.swift in Sources */,
+				829F3CF72C5C8F8000109B1A /* CGImage+RawBytes.swift in Sources */,
 				829F3CD42C5C727D00109B1A /* CategoriesJSONDecoder.swift in Sources */,
 				BDA9BEEF2C584A110055FF8E /* MVPApp.swift in Sources */,
 				BDEE114C2C5AB84B0091E608 /* profileView.swift in Sources */,
+				829F3CFC2C5C8F8000109B1A /* CVPixelBuffer+Rotate.swift in Sources */,
+				829F3D002C5C8F8000109B1A /* MLMultiArray+Image.swift in Sources */,
+				829F3D022C5C8F8000109B1A /* Predictions.swift in Sources */,
 				829F3CD82C5C727D00109B1A /* ModifyTodoView.swift in Sources */,
+				829F3CF82C5C8F8000109B1A /* CGImagePropertyOrientation.swift in Sources */,
+				829F3CFF2C5C8F8000109B1A /* MLMultiArray+Helpers.swift in Sources */,
 				BDEE114E2C5AB8710091E608 /* mapView.swift in Sources */,
+				829F3D042C5C8F8000109B1A /* UIImage+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
